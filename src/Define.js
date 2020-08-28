@@ -3,8 +3,8 @@
 //===========================
 
 // ID
-const WALL_ID = 0;
-const NONE_ID = 1;
+const NONE_ID = 0;
+const WALL_ID = 1;
 const PLAYER_POSITION_ID = 2;
 
 module.exports = {
