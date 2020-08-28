@@ -1,0 +1,26 @@
+{
+	"name": "StageEditor",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/main.js",
+	"directories": {
+		"lib": "lib"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kamonohasikamo/StageEditorForElectron.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kamonohasikamo/StageEditorForElectron/issues"
+	},
+	"homepage": "https://github.com/kamonohasikamo/StageEditorForElectron#readme",
+	"dependencies": {
+		"csv-writer": "^1.6.0"
+	}
+}
