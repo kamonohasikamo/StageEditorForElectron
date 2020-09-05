@@ -15,21 +15,24 @@ Electron でステージを自動生成できるゲーム支援システムツ�
 outputフォルダに作成したステージが保存されています。
 ![出力画面2](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/output_2.png)
 
-# Features
- 
-"hoge"のセールスポイントや差別化などを説明する
- 
 # Requirement
  
-"hoge"を動かすのに必要なライブラリなどを列挙する
+このシステムの情報は以下の通りです。
  
-* huga 3.5.2
-* hogehuga 1.0.2
+* Node.js v14.8.0
+* Electron v10.0.0
  
 # Installation
  
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
+## Node.js
+
+Node.jsのインストール方法
+
+[Node.js HP](https://nodejs.org/ja/)
+
+からNode.jsをダウンロードする。
+
+
 ```bash
 pip install huga_package
 ```
