@@ -60,7 +60,7 @@ npm i electron -g
 # Usage
 
 ```bash
-git clone 
+git clone https://github.com/kamonohasikamo/StageEditorForElectron.git
 ```
 で本ツールをクローン出来る。
 
