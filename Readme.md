@@ -8,6 +8,12 @@ Electron でステージを自動生成できるゲーム支援システムツ�
 アプリを起動すると下図のようなものが表示されます。
 ![起動画面](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/input_1.png)
 
+各項目を設定し、生成ボタンを押すと出力部分にこのようなデータが表示されます。
+![出力画面](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/output_1.png)
+
+データ下部にある「CSV出力」ボタンを押すと、このようなポップアップウィンドウが表示されます。
+outputフォルダに作成したステージが保存されています。
+![出力画面2](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/output_2.png)
 
 # Features
  
