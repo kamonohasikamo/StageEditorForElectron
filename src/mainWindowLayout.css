@@ -6,3 +6,41 @@ body {
 		Meiryo,
 		sans-serif;
 }
+
+h1 {
+	border: 5px solid #000000;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 0 0 20px;
+	padding: 15px 20px;
+	text-align: center;
+}
+
+h2 {
+	background: #000000;
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0 0 20px;
+	padding: 10px 20px;
+}
+
+h3 {
+	border-left: 5px solid #000000;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 20px;
+	padding:0 0 0 10px;
+}
+
+input.Button {
+	list-style: none;
+	overflow: hidden;
+	width: 140px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 5px;
+}
