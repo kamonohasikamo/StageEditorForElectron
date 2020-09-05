@@ -6,7 +6,7 @@ Electron でステージを自動生成できるゲーム支援システムツ�
 # DEMO
 
 アプリを起動すると下図のようなものが表示されます。
-![起動画面](https://github.com/kamonohasikamo/StageEditorForElectron/img/input_1.png)
+![起動画面](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/input_1.png)
 
 
 # Features
