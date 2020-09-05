@@ -4,9 +4,11 @@ Electron でステージを自動生成できるゲーム支援システムツ�
 基本的にはローグライクのようなゲームで使用できると思います。
 
 # DEMO
- 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
- 
+
+アプリを起動すると下図のようなものが表示されます。
+![起動画面](https://github.com/kamonohasikamo/StageEditorForElectron/img/input_1.png)
+
+
 # Features
  
 "hoge"のセールスポイントや差別化などを説明する
