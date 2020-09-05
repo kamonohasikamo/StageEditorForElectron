@@ -6,6 +6,12 @@ Electron でステージを自動生成できるゲーム支援システムツ�
 # DEMO
 
 アプリを起動すると下図のようなものが表示されます。
+
+アプリの起動は、ターミナルを開いて
+```bash
+electron .
+```
+とすれば起動できます。(後述のNode.js, Electronがインストールされている前提)
 ![起動画面](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/input_1.png)
 
 各項目を設定し、生成ボタンを押すと出力部分にこのようなデータが表示されます。
@@ -32,38 +38,39 @@ Node.jsのインストール方法
 
 からNode.jsをダウンロードする。
 
+ダウンロード後、ポップアップウィンドウを確認してインストールを行う。
+
+インストールができているかどうかの確認は
+```bash
+node --version
+```
+
+を実行するとバージョン情報が表示される。
+
+## Electron
+
+Electronのインストール方法
+
+Node.js が入っている状態でターミナルを開き
+```bash
+npm i electron -g
+```
+とすればElectronがインストールされる。
+
+# Usage
 
 ```bash
-pip install huga_package
+git clone 
 ```
- 
-# Usage
- 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+で本ツールをクローン出来る。
+
+本ツールをクローン後、フォルダ直下でターミナルを開き、
  
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+electron .
 ```
- 
+
+で起動できます。
 # Note
- 
-注意点などがあれば書く
- 
-# Author
- 
-作成情報を列挙する
- 
-* 作成者
-* 所属
-* E-mail
- 
-# License
-ライセンスを明示する
- 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
-社内向けなら社外秘であることを明示してる
- 
-"hoge" is Confidential.
+
+設定項目はありますが、「まったく部屋ができない」という可能性もあるため、納得のいくステージができるまで生成ボタンを押してください。
