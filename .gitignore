@@ -1,0 +1,9 @@
+#directories
+bower_components
+node_modules
+dist
+StageEditor-win32-x64
+
+#files
+*.tgz
+*.log

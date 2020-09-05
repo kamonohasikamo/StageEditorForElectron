@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="mainWindowLayout.css" type="text/css">
+	<script src="mainWindowModel.js"></script>
+	<title>StageEditor</title>
+</head>
+
+<body>
+	<h1>StageEditor</h1>
+
+	<h2>入力</h2>
+	以下の数値を入力して、「生成」ボタンを押すとステージがランダムで生成されます。<br>
+	気に入ったステージが生成されたらステージ下部の「CSV出力」を押します。<br>
+	出力したCSVファイルはoutputフォルダ内に保存されます。<br>
+	※入力欄の数値はそれぞれ目安です。それより小さくor大きくなる可能性はあります。
+	<form name="InputForm">
+		<h3>ステージサイズ</h3>
+		よこ(Width): <input type="text" name="inputWidth" value="50">
+		たて(Height): <input type="text" name="inputHeight" value="50">
+		<h3>部屋の数</h3>
+		最小数：<input type="text" name="inputRoomMin" value="1">
+		最大数：<input type="text" name="inputRoomMax" value="13">
+		<h3>1つの部屋の最小値</h3>
+		最小値：<input type="text" name="inputRoomMinSize" value="6">
+		<h3>出力ファイル名</h3>
+		ファイル名：<input type="text" name="outputFileName" value="output">
+		<input type="button" class="Button" value="生成" onclick="onPressInputButton();">
+	</form>
+
+	<h2>出力</h2>
+	作成されたステージ↓
+	<div id="showTable">
+	</div>
+</body>
+
+</html>
