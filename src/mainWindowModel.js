@@ -13,8 +13,6 @@ var roomData = [];
 
 var roomMinSize = 6;
 
-
-
 function onPressInputButton() {
 	mapWidth = InputForm.inputWidth.value;
 	mapHeight = InputForm.inputHeight.value;
@@ -218,8 +216,6 @@ function CreateRoom() {
 			roomData[i].left += moveX;   // 区画の左座標に動かす幅の座標を足す
 			roomData[i].right = roomData[i].left + ratioX;    // 区画の右座標に区画の左座標と部屋の幅を足す
 
-			console.log("left: " + roomData[i].left + ", top: " + roomData[i].top);
-			console.log("ratioX: " + ratioX + ", ratioY: " + ratioY);
 			// 部屋の範囲までmap配列に書き込む
 			for (var j = 0; j < ratioY; j++) {
 				for (var k = 0; k < ratioX; k++) {
@@ -283,6 +279,7 @@ function outputTable() {
 	var outputCSVButton = document.createElement('input');
 	outputCSVButton.id = "outputCSVButtonId";
 	outputCSVButton.type = "button";
+	outputCSVButton.className = "Button";
 	outputCSVButton.value = "CSV出力";
 	outputCSVButton.onclick = onPressOutputCSVButtonId;
 	document.getElementById('showTable').appendChild(outputCSVButton);
