@@ -15,23 +15,23 @@ electron .
 
 ## CreateStage
 起動するとこのような画面が出てきます。
-![起動画面](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/input_1.png)
+![起動画面](https://github.com/kamonohasikamo/StageEditorForElectron/blob/master/img/input_1.png)
 
 各項目を設定し、生成ボタンを押すと出力部分にこのようなデータが表示されます。
-![出力画面](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/output_1.png)
+![出力画面](https://github.com/kamonohasikamo/StageEditorForElectron/blob/master/img/output_1.png)
 
 黒が壁、黄色が空(部屋)を表しており、視覚的に見やすくなっています。
 
 データ下部にある「CSV出力」ボタンを押すと、このようなポップアップウィンドウが表示されます。
 outputフォルダに作成したステージが保存されています。
-![出力画面2](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/output_2.png)
+![出力画面2](https://github.com/kamonohasikamo/StageEditorForElectron/blob/master/img/output_2.png)
 
 ## EditStage
 起動画面から「編集画面へ」のボタンを押すとこのような画面に切り替わります。
-![編集画面トップ](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/input_stage_1.png)
+![編集画面トップ](https://github.com/kamonohasikamo/StageEditorForElectron/blob/master/img/input_stage_1.png)
 
 この画面の入力部で先ほど作成したステージファイル(CSV)を選択するとこのように出力されます。
-![ステージ出力](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/output_stage_1.png)
+![ステージ出力](https://github.com/kamonohasikamo/StageEditorForElectron/blob/master/img/output_stage_1.png)
 
 0が壁、1が空(部屋)を表しており、それぞれ白と赤で色分けされています。
 
@@ -39,7 +39,7 @@ outputフォルダに作成したステージが保存されています。
 
 完成したら画面中央にある「CSVファイル出力」ボタンを押すとこのようなポップアップウィンドウが表示されます。
 
-![ステージ出力](https://github.com/kamonohasikamo/StageEditorForElectron/blob/develop/img/output_stage_2.png)
+![ステージ出力](https://github.com/kamonohasikamo/StageEditorForElectron/blob/master/img/output_stage_2.png)
 
 このようなポップアップウィンドウが表示されれば、該当箇所に編集したCSVファイルが上書きされて保存されます。
 
