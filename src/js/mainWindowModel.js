@@ -1,5 +1,5 @@
 const fs = require('fs');
-var define = require('./Define');
+var define = require('./js/Define');
 
 var map = []; // map data
 var mapWidth = 50;
