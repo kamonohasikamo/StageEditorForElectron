@@ -2,7 +2,7 @@
 	"name": "StageEditor",
 	"version": "1.0.0",
 	"description": "",
-	"main": "src/main.js",
+	"main": "src/js/main.js",
 	"directories": {
 		"lib": "lib"
 	},

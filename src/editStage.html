@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/editStage.css" type="text/css">
+
+	<title>StageEditor</title>
+</head>
+
+<body>
+	<h1>EditStage</h1>
+	<input type="button" class="Button" value="生成画面へ" onclick="location.href='index.html'">
+	<h2>入力</h2>
+	編集したいステージを選択してください。(※CSVファイルのみ対応)<br>
+	<input type="file" name="file" id="inputStageData" accept=".csv">
+	</form>
+
+	<h2>出力</h2>
+	作成されたステージ↓
+	<div id="showStage"></div>
+	<script src="js/editStageModel.js"></script>
+	</div>
+</body>
+
+</html>
