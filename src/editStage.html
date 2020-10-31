@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/editStage.css" type="text/css">
-
 	<title>StageEditor</title>
 </head>
 
@@ -14,10 +13,14 @@
 	<h2>入力</h2>
 	編集したいステージを選択してください。(※CSVファイルのみ対応)<br>
 	<input type="file" name="file" id="inputStageData" accept=".csv">
+	<h3>ID一覧</h3>
+	<div id="showID">
+		<script src="js/showID.js"></script>
+	</div>
 	</form>
 
 	<h2>出力</h2>
-	作成されたステージ↓ (0:壁, 1:部屋(何もなし))<div id="outputButton"></div>
+	作成されたステージ↓ (0:壁, 1:部屋(何もなし))　　カメラこちらから下向き↓<div id="outputButton"></div>
 	<div id="showStage"></div>
 	<script src="js/editStageModel.js"></script>
 	</div>

@@ -44,3 +44,16 @@ input.Button {
 	background: #fff;
 	border-radius: 5px;
 }
+
+#showID {
+	overflow-y: scroll;
+	margin: 50px auto 20px;
+	padding: 25px;
+	width: 300px;
+	height: 200px;
+	border: 2px solid #ccc;
+}
+
+#showIDTable{
+  border-collapse:collapse;
+}

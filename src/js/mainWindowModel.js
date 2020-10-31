@@ -315,7 +315,7 @@ function onPressOutputCSVButtonId() {
 	var outputCSVData = "";
 	for (let i = 0; i < mapHeight; i++) {
 		for (let j = 0; j < mapWidth; j++) {
-			if (map[i][j] >= 100) {
+			if (map[i][j] >= define.ROOM_ID) {
 				outputCSVData += define.NONE_ID + ",";
 			} else {
 				outputCSVData += map[i][j] + ",";

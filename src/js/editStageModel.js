@@ -49,12 +49,19 @@ function createTable(data) {
 			var inputNum = document.createElement('input');
 			inputNum.type = "tel";
 			inputNum.value = data[i][j];
-			inputNum.style.width = "10px";
+			inputNum.style.width = "65%";
 			inputNum.setAttribute("onInput", "onChangeBackGroundColor(this)");
 			td.appendChild(inputNum);
 			//td.innerText = data[i][j];
-			if (data[i][j] == define.NONE_ID) {
-				td.style.backgroundColor = "red";
+			var flag = 0;
+			for (var k = 0; k < define.data.length; k++) {
+				if (data[i][j] == define.data[k].id && define.data[k].color != "NONE") {
+					td.style.backgroundColor = define.data[k].color;
+					flag = 1;
+				}
+			}
+			if (flag == 0) {
+				td.style.backgroundColor = "white";
 			}
 			tr.appendChild(td);
 		}
@@ -109,9 +116,14 @@ function onPressOutputCSVButton() {
 // 数字が入力されたら色を変える処理
 function onChangeBackGroundColor($this) {
 	var parent = $this.parentNode;
-	if ($this.value == define.NONE_ID) {
-		parent.style.backgroundColor = "yellow";
-	} else {
+	var flag = 0;
+	for (var i = 0; i < define.data.length; i++) {
+		if ($this.value == define.data[i].id && define.data[i].color != "NONE") {
+			parent.style.backgroundColor = define.data[i].color;
+			flag = 1;
+		}
+	}
+	if (flag == 0) {
 		parent.style.backgroundColor = "white";
 	}
 }
