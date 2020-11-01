@@ -11,6 +11,11 @@ const OUTPUT_PATH = "./output/";
 // ID 追加したら以下にも追加すること
 const data = [
 	{
+		name: "teleport",
+		id: "1-99\ntoNum",
+		color: "blue",
+	},
+	{
 		name: "PLAYER_POSITION_ID",
 		id: PLAYER_POSITION_ID,
 		color: "yellow",

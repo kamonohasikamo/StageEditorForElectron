@@ -52,13 +52,16 @@ function createTable(data) {
 			inputNum.style.width = "65%";
 			inputNum.setAttribute("onInput", "onChangeBackGroundColor(this)");
 			td.appendChild(inputNum);
-			//td.innerText = data[i][j];
 			var flag = 0;
 			for (var k = 0; k < define.data.length; k++) {
 				if (data[i][j] == define.data[k].id && define.data[k].color != "NONE") {
 					td.style.backgroundColor = define.data[k].color;
 					flag = 1;
 				}
+			}
+			if (0 < data[i][j] && data[i][j] < 100) {
+				td.style.backgroundColor = "blue";
+				flag = 1;
 			}
 			if (flag == 0) {
 				td.style.backgroundColor = "white";
@@ -122,6 +125,10 @@ function onChangeBackGroundColor($this) {
 			parent.style.backgroundColor = define.data[i].color;
 			flag = 1;
 		}
+	}
+	if (0 < $this.value && $this.value < 100) {
+		parent.style.backgroundColor = "blue";
+		flag = 1;
 	}
 	if (flag == 0) {
 		parent.style.backgroundColor = "white";
