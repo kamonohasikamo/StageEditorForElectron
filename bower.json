@@ -1,0 +1,17 @@
+{
+	"name": "StageEditor",
+	"description": "",
+	"main": "src/js/main.js",
+	"license": "ISC",
+	"moduleType": [],
+	"homepage": "",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components"
+	],
+	"dependencies": {
+		"jquery": "*",
+		"bootstrap": "*"
+	}
+}

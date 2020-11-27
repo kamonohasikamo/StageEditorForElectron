@@ -6,6 +6,7 @@
 const PLAYER_POSITION_ID = 100;
 const NONE_ID = 101;
 const WALL_ID = 102;
+const NAVIGATOR_ID = 200;
 const ROOM_ID = 1000;
 const OUTPUT_PATH = "./output/";
 // ID 追加したら以下にも追加すること
@@ -29,6 +30,11 @@ const data = [
 		name: "WALL_ID",
 		id: WALL_ID,
 		color: "green"
+	},
+	{
+		name: "NAVIGATOR_ID",
+		id: NAVIGATOR_ID,
+		color: "NONE"
 	},
 ]
 

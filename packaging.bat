@@ -1,1 +1,1 @@
-electron-packager . StageEditor --platform=win32 --arch=x64 --electron--version=10.0.0
+electron-packager . StageEditor --platform=win32 --arch=x64 --electron--version=10.1.5
