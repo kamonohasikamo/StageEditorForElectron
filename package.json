@@ -1,13 +1,14 @@
 {
 	"name": "StageEditor",
-	"version": "1.0.0",
+	"version": "10.1.5",
 	"description": "",
 	"main": "src/js/main.js",
 	"directories": {
 		"lib": "lib"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"release": "node release.js"
 	},
 	"repository": {
 		"type": "git",
@@ -22,5 +23,9 @@
 	"homepage": "https://github.com/kamonohasikamo/StageEditorForElectron#readme",
 	"dependencies": {
 		"csv-writer": "^1.6.0"
+	},
+	"devDependencies": {
+		"electron-packager": "*",
+		"electron": "*"
 	}
 }

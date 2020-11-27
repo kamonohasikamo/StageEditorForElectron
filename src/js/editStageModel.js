@@ -4,6 +4,30 @@ var file = document.getElementById('inputStageData');
 var result = document.getElementById('showStage');
 
 var fileName = "";
+var isClickNumMode = false;
+var clickNum = null;
+
+function getIsClickMode() {
+	var inputClickNumModeElement = document.getElementById('inputClickNumMode');
+	isClickNumMode = inputClickNumModeElement.checked;
+}
+
+function changeClickNum(buttonId = 0) {
+	if (isClickNumMode) {
+		var clickNumElement = document.getElementById('clickNumId');
+		switch (buttonId) {
+			case 1:
+				clickNum = 101;
+				break;
+			case 2:
+				clickNum = 102;
+				break;
+			default:
+				clickNum = clickNumElement.value;
+				break;
+		}
+	}
+}
 
 function loadCSVFile(e) {
 	// ファイル情報を取得
@@ -49,12 +73,30 @@ function createTable(data) {
 			var inputNum = document.createElement('input');
 			inputNum.type = "tel";
 			inputNum.value = data[i][j];
-			inputNum.style.width = "10px";
+			inputNum.style.width = "65%";
 			inputNum.setAttribute("onInput", "onChangeBackGroundColor(this)");
 			td.appendChild(inputNum);
-			//td.innerText = data[i][j];
-			if (data[i][j] == define.NONE_ID) {
-				td.style.backgroundColor = "red";
+			td.onclick = function (e) {
+				console.log(isClickNumMode);
+				console.log("clickNum = " + clickNum);
+				if (isClickNumMode && clickNum != null && clickNum != "") {
+					this.childNodes[0].value = clickNum;
+					onChangeBackGroundColor(this.childNodes[0]);
+				}
+			};
+			var flag = 0;
+			for (var k = 0; k < define.data.length; k++) {
+				if (data[i][j] == define.data[k].id && define.data[k].color != "NONE") {
+					td.style.backgroundColor = define.data[k].color;
+					flag = 1;
+				}
+			}
+			if (0 < data[i][j] && data[i][j] < 100) {
+				td.style.backgroundColor = "blue";
+				flag = 1;
+			}
+			if (flag == 0) {
+				td.style.backgroundColor = "white";
 			}
 			tr.appendChild(td);
 		}
@@ -109,9 +151,18 @@ function onPressOutputCSVButton() {
 // 数字が入力されたら色を変える処理
 function onChangeBackGroundColor($this) {
 	var parent = $this.parentNode;
-	if ($this.value == define.NONE_ID) {
-		parent.style.backgroundColor = "yellow";
-	} else {
+	var flag = 0;
+	for (var i = 0; i < define.data.length; i++) {
+		if ($this.value == define.data[i].id && define.data[i].color != "NONE") {
+			parent.style.backgroundColor = define.data[i].color;
+			flag = 1;
+		}
+	}
+	if (0 < $this.value && $this.value < 100) {
+		parent.style.backgroundColor = "blue";
+		flag = 1;
+	}
+	if (flag == 0) {
 		parent.style.backgroundColor = "white";
 	}
 }

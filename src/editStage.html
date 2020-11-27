@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/editStage.css" type="text/css">
-
 	<title>StageEditor</title>
 </head>
 
@@ -14,10 +13,30 @@
 	<h2>入力</h2>
 	編集したいステージを選択してください。(※CSVファイルのみ対応)<br>
 	<input type="file" name="file" id="inputStageData" accept=".csv">
+	<h3>ID一覧</h3>
+	<div id="showID">
+		<script src="js/showID.js"></script>
+	</div>
 	</form>
-
+	<h3>クリック数値入力モード</h3>
+	クリックしたセルをここで設定した数値にするモードです．<br>
+	ONの時のみ使用可能：
+	<div class="switch">
+		<label class="switch__label">
+			<input type="checkbox" class="switch__input" id="inputClickNumMode" onchange="getIsClickMode()" />
+			<span class="switch__content"></span>
+			<span class="switch__circle"></span>
+		</label>
+	</div>
+	<br>
+	入力数値：
+	<input type="text" name="clickNum" id="clickNumId" value="">
+	<input type="button" class="Button" value="変更" id="changeClickNumButton" onclick="changeClickNum()">
+	<input type="button" class="Button" value="無し" id="wallButton" onclick="changeClickNum(1)">
+	<input type="button" class="Button" value="壁" id="NoneButton" onclick="changeClickNum(2)">
 	<h2>出力</h2>
-	作成されたステージ↓ (0:壁, 1:部屋(何もなし))<div id="outputButton"></div>
+	作成されたステージ↓ (0:壁, 1:部屋(何もなし))　　カメラこちらから下向き↓
+	<div id="outputButton"></div>
 	<div id="showStage"></div>
 	<script src="js/editStageModel.js"></script>
 	</div>
